@@ -9,17 +9,17 @@ const Gallery = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedItem, setSelectedItem] = useState(null);
 
-  // עדכון האינדקס של התמונה הנוכחית אוטומטית כל 4 שניות
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-    }, 4000); // כל 4 שניות
+    }, 2000); // כל 4 שניות
 
     return () => clearInterval(interval); // נקה את ה-interval כשהקומפוננטה מתפרקת
   }, [items.length]);
 
   const handleImageClick = (item) => {
-    setSelectedItem(item); // מעבר לקומפוננטת הזמנה עם הפרטים
+    setSelectedItem(item); 
   };
 
   if (selectedItem) {

@@ -1,0 +1,62 @@
+/* עיצוב ניווט מתקדם */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  body {
+    font-family: 'Rubik', sans-serif;
+  }
+  h1, h2, h3 {
+    font-weight: 700;
+  }
+  p {
+    font-weight: 300;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #675c1d;
+    font-family: 'Georgia', serif;
+  }
+  
+  .gold-text {
+    color: #675c1d; /* זהב */
+    font-family: 'Rubik', sans-serif;
+
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #675c1d;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+  }
+  
+  .icon {
+    color: #675c1d;
+    font-size: 1.8rem;
+  }
+  

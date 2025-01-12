@@ -1,5 +1,5 @@
 import React from 'react';
-import Gallery from './Gallery'; // קומפוננטת הגלריה עם אנימציות
+import Gallery from './Gallery';
 
 const BarDesigns = () => {
   const barItems = [
